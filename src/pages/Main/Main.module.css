@@ -1,0 +1,87 @@
+.text_area {
+  margin-top: 90px;
+  margin-left: 100px;
+}
+
+.text_area .title {
+  font-size: 30px;
+  margin-bottom: 85px;
+}
+
+.text_area h1 {
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.text_area .line {
+  width: 500px;
+  height: 1px;
+  background-color: #ffe6cf;
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  left: 30px;
+  opacity: 0.2;
+
+
+}
+
+.text_area .name {
+  font-size: 100px;
+  line-height: 1;
+}
+
+.text_area .introduce {
+  font-size: 20px;
+}
+
+.circle_wrapper {
+  position: relative;
+  margin-top: 42px;
+  margin-right: 100px;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circle:nth-child(1) {
+  background-color: transparent;
+  border: 1px solid black;
+  opacity: 0.2;
+  right: 400px
+}
+
+.circle:nth-child(2) {
+  background-color: #ffc000;
+  right: 200px;
+}
+
+.circle:nth-child(3) {
+  background-color: #fedd15;
+  right: 0;
+  transition: 1s;
+}
+
+
+.badge {
+  width: 70px;
+  height: 70px;
+  background-color: #ffc000;
+  color: #484848;
+  margin-left: 24px;
+  box-sizing: border-box;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+  right: 100px;
+  font-weight: bold;
+}

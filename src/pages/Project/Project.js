@@ -10,7 +10,7 @@ const Project = () => {
           <h1 className={styles.title}>
             Project <sup>1</sup>
           </h1>
-          <p className={styles.introduce}>지금까지 작업한 프로젝트</p>
+          <p className={styles.desc}>지금까지 작업한 프로젝트</p>
         </div>
       </div>
 

@@ -13,6 +13,7 @@
   line-height: 50px;
   font-weight: normal;
   margin-bottom: 20px;
+
 }
 
 .text_area .line {
@@ -24,8 +25,6 @@
   top: -35px;
   left: 30px;
   opacity: 0.2;
-
-
 }
 
 .text_area .name {
@@ -34,13 +33,13 @@
 }
 
 .text_area .introduce {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .circle_wrapper {
   position: relative;
   margin-top: 42px;
-  margin-right: 100px;
+  padding-right: 100px;
 }
 
 .circle {
@@ -48,24 +47,29 @@
   height: 500px;
   border-radius: 50%;
   position: absolute;
+  animation: circleShow 3s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  animation-fill-mode: both;
 }
 
 .circle:nth-child(1) {
   background-color: transparent;
-  border: 1px solid black;
-  opacity: 0.2;
-  right: 400px
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  right: 400px;
+  animation-delay: 0s;
 }
 
 .circle:nth-child(2) {
   background-color: #ffc000;
   right: 200px;
+  animation-delay: 0.2s;
 }
 
 .circle:nth-child(3) {
   background-color: #fedd15;
   right: 0;
   transition: 1s;
+  animation-delay: 0.4s;
 }
 
 
@@ -80,8 +84,34 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  top: 0px;
-  right: 100px;
+
   font-weight: bold;
 }
+
+
+@keyframes circleShow {
+  from {
+    opacity: 0;
+    transform: translateX(-400px);
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* @keyframes circleShow {
+  from {
+    opacity: 0;
+    transform: translateY(100px) scale(0.6);
+    background-color: aqua;
+  }
+
+  to {
+
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+} */

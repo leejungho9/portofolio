@@ -1,5 +1,28 @@
+.featured {
+  height: 170px;
+  background-color: #7595a7;
+  position: relative;
+}
+
+.featured .title {
+  font-size: 45px;
+  margin-bottom: 15px
+}
+
+sup {
+  font-size: 20px;
+}
+
+.count {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  font-size: 30px;
+}
+
 .search {
-  margin: 20px 100px;
+  margin: 0 100px;
+  margin-top: 30px;
   position: relative;
 }
 
@@ -67,12 +90,13 @@
 }
 
 .text_area {
-  margin-top: 150px;
-  margin-left: 100px;
+  position: relative;
+  top: 50px;
+  left: 100px;
 }
 
 .text_area h1 {
-  font-size: 50px;
+  font-size: 45px;
   line-height: 1;
   font-weight: normal;
   margin-bottom: 20px;
@@ -87,45 +111,48 @@
   padding: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 350px;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-auto-rows: 290px;
+  grid-column-gap: 100px;
+  grid-row-gap: 30px;
 }
 
 .list .item {
-  background-color: red;
   border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 
 .list .item:nth-child(1) {
-  background-color: blue;
+  background-image: url('/public/img/react.svg');
 }
 
 .list .item:nth-child(2) {
-  background-color: yellow;
+  background-image: url('/public/img/redux.svg');
 }
 
 .list .item:nth-child(3) {
-  background-color: pink;
+  background-image: url('/public/img/typescript.svg');
 }
 
 .list .item:nth-child(4) {
-  background-color: green;
+  background-image: url('/public/img/javascript.svg');
 }
 
 .list .item:nth-child(5) {
-  background-color: blue;
+  background-image: url('/public/img/html.svg');
+  background-size: contain;
 }
 
 .list .item:nth-child(6) {
-  background-color: yellow;
+  background-image: url('/public/img/css.svg');
+  background-size: contain;
 }
 
 .list .item:nth-child(7) {
-  background-color: pink;
+  background-image: url('/public/img/git.svg');
 }
 
 .list .item:nth-child(8) {
-  background-color: green;
+  background-image: url('/public/img/nextjs.svg');
 }

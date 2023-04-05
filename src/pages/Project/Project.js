@@ -1,52 +1,107 @@
 import React from "react";
 import styles from "./Project.module.css";
+import classNames from "classnames/bind";
+const cn = classNames.bind(styles);
 
 const Project = () => {
   return (
-    <>
-      <div className={styles.featured}>
-        <div className={styles.count}>8</div>
-        <div className={styles.text_area}>
-          <h1 className={styles.title}>
-            Project <sup>1</sup>
-          </h1>
-          <p className={styles.desc}>지금까지 작업한 프로젝트</p>
+    <section className="content">
+      <div className={cn("featured")}>
+        <div className={cn("count")}>1</div>
+        <div className={cn("text_area")}>
+          <h1 className={cn("title")}>Project</h1>
         </div>
       </div>
 
-      <ul className={styles.swiper}>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
-      <ol className={styles.list}>
-        <li className={styles.item}>
-          <div className={styles.num}>1</div>
-          <div className={styles.infos}>
-            <div className={styles.title}>Photoday</div>
-            <div className={styles.desc}>Lorem Ipsum is simply dummy</div>
+      <div className={cn("swiper")}>
+        <div className={cn("card_wrapper")}>
+          <img
+            className={cn("image")}
+            src={`${process.env.PUBLIC_URL}/img/photoday.png`}
+            alt="프로젝트"
+          />
+          <div className={cn("item")}>
+            <div className={cn("infos")}>
+              <div className={cn("title")}>Photoday</div>
+              <div className={cn("desc")}>직접찍은 사진을 공유하는 사이트</div>
+              <div className={cn("date")}>2023-03-01~ 2023-04-03</div>
+            </div>
           </div>
-        </li>
-
-        <li className={styles.item}>
-          <div className={styles.num}>2</div>
-          <div className={styles.infos}>
-            <div className={styles.title}>Damda</div>
-            <div className={styles.desc}>Lorem Ipsum is simply dummy</div>
+        </div>
+        <div className={cn("card_wrapper")}>
+          <img
+            className={cn("image")}
+            src={`${process.env.PUBLIC_URL}/img/damda.png`}
+            alt="프로젝트"
+          />
+          <div className={cn("item")}>
+            <div className={cn("infos")}>
+              <div className={cn("title")}>DAMDA</div>
+              <div className={cn("desc")}>
+                장인이 직접 만든 식품을 판매하는 이커머스 사이트
+              </div>
+              <div className={cn("date")}>2023-03-01~ 2023-04-03</div>
+            </div>
           </div>
-        </li>
-
-        <li className={styles.item}>
-          <div className={styles.num}>3</div>
-          <div className={styles.infos}>
-            <div className={styles.title}>MungDoList</div>
-            <div className={styles.desc}>Lorem Ipsum is simply dummy</div>
+        </div>
+        <div className={cn("card_wrapper")}>
+          <img
+            className={cn("image")}
+            src={`${process.env.PUBLIC_URL}/img/bhands.png`}
+            alt="프로젝트"
+          />
+          <div className={cn("item")}>
+            <div className={cn("infos")}>
+              <div className={cn("title")}>B*HANDS</div>
+              <div className={cn("desc")}>B*HANDS 사이트</div>
+              <div className={cn("date")}>2023-03-01~ 2023-04-03</div>
+            </div>
           </div>
-        </li>
-      </ol>
-    </>
+        </div>
+        <div className={cn("card_wrapper")}>
+          <img
+            className={cn("image")}
+            src={`${process.env.PUBLIC_URL}/img/cokcookmain.png`}
+            alt="프로젝트"
+          />
+          <div className={cn("item")}>
+            <div className={cn("infos")}>
+              <div className={cn("title")}>cokcokcookcook</div>
+              <div className={cn("desc")}>자신의 레시피를 공유하는 사이트</div>
+              <div className={cn("date")}>2023-03-01~ 2023-04-03</div>
+            </div>
+          </div>
+        </div>
+        <div className={cn("card_wrapper")}>
+          <img
+            className={cn("image")}
+            src={`${process.env.PUBLIC_URL}/img/photoday.png`}
+            alt="프로젝트"
+          />
+          <div className={cn("item")}>
+            <div className={cn("infos")}>
+              <div className={cn("title")}>Photoday</div>
+              <div className={cn("desc")}>직접찍은 사진을 공유하는 사이트</div>
+              <div className={cn("date")}>2023-03-01~ 2023-04-03</div>
+            </div>
+          </div>
+        </div>
+        <div className={cn("card_wrapper")}>
+          <img
+            className={cn("image")}
+            src={`${process.env.PUBLIC_URL}/img/photoday.png`}
+            alt="프로젝트"
+          />
+          <div className={cn("item")}>
+            <div className={cn("infos")}>
+              <div className={cn("title")}>Photoday</div>
+              <div className={cn("desc")}>직접찍은 사진을 공유하는 사이트</div>
+              <div className={cn("date")}>2023-03-01~ 2023-04-03</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

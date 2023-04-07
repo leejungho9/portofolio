@@ -7,7 +7,6 @@
 
 .outer {
   height: 100vh;
-  overflow: hidden;
 }
 
 .outer::-webkit-scrollbar {
@@ -25,14 +24,10 @@
 
 
 body {
-  background-color: #485861;
-  color: #fff;
   font-size: 11px;
   line-height: 1.2;
   font-weight: 500;
-  overflow-x: hidden;
   margin: 0;
-  overflow-y: hidden;
 }
 
 html,

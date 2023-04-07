@@ -1,71 +1,63 @@
-.featured {
-  height: 170px;
-  background-color: #7595a7;
+.project_container {
+  padding: 80px 0;
+  width: 1550px;
+  margin: 0 auto;
   position: relative;
 }
 
-.featured .title {
-  font-size: 45px;
-  margin-bottom: 15px
+.title_area {
+  display: flex;
 }
 
-sup {
-  font-size: 20px;
-}
-
-.count {
-  position: absolute;
-  top: 30px;
-  right: 100px;
-  font-size: 30px;
-}
-
-.text_area {
-  position: absolute;
-  bottom: 50px;
-  left: 100px;
-}
-
-.text_area .title {}
-
-.text_area h1 {
+.title_area h1 {
   font-size: 50px;
-  line-height: 1;
-  font-weight: normal;
+  color: #141414;
+  position: relative;
+  z-index: 0;
   margin-bottom: 20px;
 }
 
+.title_area h1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #ffc000;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  z-index: -1;
+}
 
-.text_area .desc {
-  font-size: 15px;
+.swiper_wrapper {
+  width: 100%;
+  height: 650px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .swiper {
-  white-space: nowrap;
-  padding: 70px 100px;
-  padding-bottom: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-  justify-items: center;
-
+  padding: 100px 150px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .image {
-  width: 450px;
-  height: 250px;
+  width: 900px;
+  height: 500px;
   background-size: cover;
   background-position: center;
   display: inline-block;
   border-radius: 10px;
-  margin-right: 30px;
+  box-shadow: 5px 5px 25px 10px rgba(0, 0, 0, 0.1);
 }
 
 .item {
   display: flex;
   align-items: center;
-  padding: 10px 0;
   position: relative;
+  margin-right: 60px;
 }
 
 
@@ -73,27 +65,32 @@ sup {
   display: inline-block;
 }
 
-.item .title {
-  font-size: 22px;
-  margin-bottom: 5px;
+.item .subtitle {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 500;
 }
 
+.item .title {
+  font-size: 50px;
+  margin-bottom: 50px;
+  color: #444;
+  font-weight: 500;
+}
 
 .item .desc {
   font-size: 15px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .item .date {
-  font-size: 13px;
+  font-size: 15px;
   opacity: 0.3;
 }
 
-.card_wrapper {
-  transition: 0.5s;
-}
-
-.card_wrapper:hover {
-  transform: translateY(-2px);
+.item .skill {
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 50px;
 }

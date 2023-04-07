@@ -1,54 +1,120 @@
-.introduce_header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 120px;
+.intro_section {
+  background-color: #fff;
+
 }
 
-.introduce_header .thumb_wrapper {
+.introduce_container {
+  padding: 80px 0;
+  width: 1550px;
+  margin: 0 auto;
   position: relative;
-  margin-bottom: 50px;
-}
-
-.introduce_header .thumbnail {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  background-color: blue;
-  box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.1), 0 24px 24px 0 rgba(0, 0, 0, 0.24);
-}
-
-.introduce_header .badge {
-  width: 50px;
-  height: 50px;
-  font-size: 20px;
-  position: absolute;
-  background-color: #fedd15;
-  border-radius: 50%;
-  top: 40px;
-  right: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
-.text_area h2 {
-  font-size: 70px;
-  font-weight: 500;
+.introduce_box {
+  width: 50%
+}
+
+.image_thumnail {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.title_area {
+  display: flex;
+}
+
+.stack_wrapper,
+.thumb_wrapper {
+  padding: 0 10px;
+}
+
+.stack_wrapper h1,
+.thumb_wrapper h1 {
+  font-size: 50px;
+  color: #141414;
+  position: relative;
+  z-index: 0;
   margin-bottom: 20px;
 }
 
-.text_area .desc {
-  font-size: 23px;
+.stack_wrapper h1::before,
+.thumb_wrapper h1::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #ffc000;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  z-index: -1;
 }
 
-.email {
-  font-size: 23px;
+
+.text_area .desc {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  padding: 20px 0;
+  line-height: 1.5;
+  color: #141414
+}
+
+
+.info {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.info_item {
+  margin: 0 10px;
+  font-size: 18px;
   padding: 14px 28px 14px 28px;
   background-color: rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
   border-radius: 50px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  color: #141414
+}
+
+
+.stack_box {
+  width: 50%;
+}
+
+.stack_wrapper {
+  display: flex;
+  width: 100%;
+  padding: 0 10px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.stack_area {
+  width: 100%;
+}
+
+.stack_area table {
+  width: 100%;
+  color: #000;
+  font-size: 15px;
+}
+
+
+.stack_area .tools_image {
+  width: 60px;
+  height: 60px;
   margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.table_cell {
+  padding: 0 30px;
+  line-height: 1.5;
 }

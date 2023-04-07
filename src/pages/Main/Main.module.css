@@ -1,3 +1,7 @@
+.main_section {
+  background-color: #141414;
+}
+
 .text_area {
   margin-top: 90px;
   margin-left: 100px;
@@ -6,6 +10,7 @@
 .text_area .title {
   font-size: 30px;
   margin-bottom: 85px;
+  color: #fff;
 }
 
 .text_area h1 {
@@ -13,7 +18,7 @@
   line-height: 50px;
   font-weight: normal;
   margin-bottom: 20px;
-
+  color: #fff;
 }
 
 .text_area .line {
@@ -25,15 +30,18 @@
   top: -35px;
   left: 30px;
   opacity: 0.2;
+
 }
 
 .text_area .name {
   font-size: 100px;
   line-height: 1;
+  color: #fff;
 }
 
 .text_area .introduce {
   font-size: 25px;
+  color: #ffe6cf;
 }
 
 .circle_wrapper {
@@ -43,75 +51,88 @@
 }
 
 .circle {
-  width: 500px;
-  height: 500px;
+  width: 800px;
+  height: 800px;
   border-radius: 50%;
   position: absolute;
-  animation: circleShow 3s;
-  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-  animation-fill-mode: both;
 }
 
 .circle:nth-child(1) {
+  width: 500px;
+  height: 500px;
   background-color: transparent;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  right: 400px;
-  animation-delay: 0s;
+  border: 1px solid rgba(192, 192, 192, 0.3);
+  top: -320px;
+  right: 300px;
+  animation: ball1-1 3s linear infinite alternate;
 }
 
 .circle:nth-child(2) {
   background-color: #ffc000;
+  top: -50px;
   right: 200px;
-  animation-delay: 0.2s;
+  animation: ball1-2 3s linear infinite alternate;
 }
 
 .circle:nth-child(3) {
+  opacity: 0.9;
   background-color: #fedd15;
-  right: 0;
-  transition: 1s;
-  animation-delay: 0.4s;
+  top: -300px;
+  right: -300px;
+  animation: ball1-3 4s linear infinite alternate;
 }
 
 
-.badge {
-  width: 70px;
-  height: 70px;
-  background-color: #ffc000;
-  color: #484848;
-  margin-left: 24px;
-  box-sizing: border-box;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@keyframes ball1-1 {
 
-  font-weight: bold;
-}
-
-
-@keyframes circleShow {
-  from {
-    opacity: 0;
-    transform: translateX(-400px);
+  0% {
+    right: 300px;
+    top: -320px;
   }
 
-  to {
+  50% {
+    right: 300px;
+    top: -340px;
+  }
 
-    opacity: 1;
-    transform: translateX(0);
+  100% {
+    right: 300px;
+    top: -360px;
   }
 }
 
-/* @keyframes circleShow {
-  from {
-    opacity: 0;
-    transform: translateY(100px) scale(0.6);
-    background-color: aqua;
+@keyframes ball1-2 {
+
+  0% {
+    right: 200px;
+    top: -50px;
   }
 
-  to {
-
-    opacity: 1;
-    transform: translateY(0) scale(1);
+  50% {
+    right: 220px;
+    top: -50px;
   }
-} */
+
+  100% {
+    right: 240px;
+    top: -50px;
+  }
+}
+
+@keyframes ball1-3 {
+
+  0% {
+    right: -300px;
+    top: -300px;
+  }
+
+  50% {
+    right: -280px;
+    top: -250;
+  }
+
+  100% {
+    right: -250px;
+    top: -240px;
+  }
+}

@@ -5,7 +5,7 @@ const cn = classNames.bind(styles);
 
 const Main = () => {
   return (
-    <section className="content">
+    <section className={cn("content", "main_section")}>
       <div className={cn("text_area", "stagger-wrapper")}>
         <div className={cn("title", "stagger-item")}>Portfolio</div>
         <h1>
@@ -21,14 +21,11 @@ const Main = () => {
           Hello, I'm FrontEnd Developer
         </p>
       </div>
-      {/* 원 영역 */}
       <div className={styles.circle_wrapper}>
         <div className={styles.circle}></div>
         <div className={styles.circle}></div>
         <div className={styles.circle}></div>
       </div>
-      {/* 뱃지 영역 */}
-      {/* <div className={styles.badge}>Home</div> */}
     </section>
   );
 };

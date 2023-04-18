@@ -1,6 +1,6 @@
 .project_container {
-  padding: 80px 0;
-  width: 1550px;
+  padding: 80px 100px;
+  width: 1700px;
   margin: 0 auto;
   position: relative;
 }
@@ -81,16 +81,26 @@
 
 .item .desc {
   font-size: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .item .date {
   font-size: 15px;
-  opacity: 0.3;
+  color: #7c7c7c;
 }
 
 .item .skill {
   font-size: 15px;
   font-weight: normal;
   margin-bottom: 50px;
+}
+
+.item .link {
+  color: #08458b;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.item .link:hover {
+  text-decoration: underline;
 }

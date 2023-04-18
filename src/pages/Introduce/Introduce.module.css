@@ -4,16 +4,17 @@
 }
 
 .introduce_container {
-  padding: 80px 0;
-  width: 1550px;
+  padding: 80px 100px;
   margin: 0 auto;
   position: relative;
   display: flex;
+  width: 1700px;
 
 }
 
 .introduce_box {
-  width: 50%
+  width: 50%;
+  margin-right: 50px;
 }
 
 .image_thumnail {
@@ -80,7 +81,8 @@
   border-radius: 50px;
   box-sizing: border-box;
   margin-top: 20px;
-  color: #141414
+  color: #141414;
+  cursor: pointer;
 }
 
 

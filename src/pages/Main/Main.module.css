@@ -1,5 +1,5 @@
 .main_section {
-  background-color: #141414;
+  background-color: #fff;
 }
 
 .text_area {
@@ -10,15 +10,15 @@
 .text_area .title {
   font-size: 30px;
   margin-bottom: 85px;
-  color: #fff;
+  color: #141414;
 }
 
 .text_area h1 {
   font-size: 50px;
   line-height: 50px;
-  font-weight: normal;
+  font-weight: 400;
   margin-bottom: 20px;
-  color: #fff;
+  color: #141414;
 }
 
 .text_area .line {
@@ -36,12 +36,12 @@
 .text_area .name {
   font-size: 100px;
   line-height: 1;
-  color: #fff;
+  color: #000;
 }
 
 .text_area .introduce {
   font-size: 25px;
-  color: #ffe6cf;
+  color: #000;
 }
 
 .circle_wrapper {

@@ -22,15 +22,26 @@ const Project = () => {
                   <div className={cn("subtitle")}>
                     RESPONSIVE WEBSITE [PC, MOB]
                   </div>
-                  <h1 className={cn("title")}>Photoday</h1>
+                  <h1 className={cn("title")}>photoday</h1>
                   <div className={cn("desc")}>
-                    직접찍은 사진을 공유하는 사이트
+                    사진을 무료로 공유하고, 저작권 걱정 없이 다운로드 받을 수
+                    있는 웹사이트
                   </div>
                   <div className={cn("skill")}>
-                    React, Node.js, Redux, Axios, Vite 사용
+                    React, Redux, TypeScript, HTML, CSS, AWS 사용
                   </div>
+                  <div className={cn("link")}>
+                    <a
+                      href="https://adorable-viscount-bb5.notion.site/phtoday-ce9d3ccc01834d03bd37921f7f84a1dc"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      photoday의 자세한 이야기
+                    </a>
+                  </div>
+
                   <div className={cn("date")}>
-                    2023-03-01~ 2023-04-03 | 팀프로젝트
+                    2023.03.03 ~ 2023.04.03 | 팀프로젝트
                   </div>
                 </div>
               </div>
@@ -43,16 +54,28 @@ const Project = () => {
             <div className={cn("swiper")}>
               <div className={cn("item")}>
                 <div className={cn("infos")}>
-                  <div className={cn("subtitle")}>WEBSITE [PC]</div>
+                  <div className={cn("subtitle")}>
+                    RESPONSIVE WEBSITE [PC, MOB]
+                  </div>
                   <h1 className={cn("title")}>DAMDA</h1>
                   <div className={cn("desc")}>
-                    장인들이 만든 식품을 판매하는 이커머스
+                    합리적인 가격으로 수제 꿀, 수제 청 등을 판매하는 건강식품
+                    온라인 쇼핑몰
                   </div>
                   <div className={cn("skill")}>
-                    React, Node.js, firebase 사용
+                    React, Redux, HTML, CSS, firebase, AWS 사용
+                  </div>
+                  <div className={cn("link")}>
+                    <a
+                      href="https://adorable-viscount-bb5.notion.site/DAMDA-072ffd93323b420ea30ff2c45a894920"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      DAMDA의 더 많은 이야기
+                    </a>
                   </div>
                   <div className={cn("date")}>
-                    2023-03-01~ 2023-04-03 | 팀프로젝트
+                    2023-02-05~ 2023-04-30 | 팀프로젝트
                   </div>
                 </div>
               </div>
@@ -69,10 +92,25 @@ const Project = () => {
                     RESPONSIVE WEBSITE [PC, MOB]
                   </div>
                   <h1 className={cn("title")}>B*HANDS</h1>
-                  <div className={cn("desc")}>비핸즈 굿즈 사이트</div>
-                  <div className={cn("skill")}> javaScript, html, css 사용</div>
+                  <div className={cn("desc")}>
+                    카드부터 아트프린트, 민화까지 다양한 아트상품을 판매하는
+                    비핸즈 회사의 웹사이트
+                  </div>
+                  <div className={cn("skill")}>
+                    {" "}
+                    JavaScript, HTML, CSS 사용 ➝ React로 리팩토링 진행중
+                  </div>
+                  <div className={cn("link")}>
+                    <a
+                      href="https://adorable-viscount-bb5.notion.site/B-HANDS-39fa4760089a41ce954bc856b4ce7e41"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      B*HANDS의 더 많은 이야기
+                    </a>
+                  </div>
                   <div className={cn("date")}>
-                    2023-03-01~ 2023-04-03 | 개인프로젝트
+                    2022-06-10~ 2022-07-16 | 개인프로젝트
                   </div>
                 </div>
               </div>
